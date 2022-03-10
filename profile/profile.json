@@ -1,0 +1,124 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Sciences (Honours)",
+      "department": "Computer Science",
+      "duration": "2014-2019",
+      "school_name": "University of Ontario Institute of Technology(UOIT)"
+    },
+    {
+      "awards_achievements": [
+        "GPA: 4.66/5.0"
+      ],
+      "degree": "Graduate Certificate",
+      "department": "AI Analysis, Design and Implementation",
+      "duration": "2020-2021",
+      "school_name": "Durham College"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_FaizanAli",
+  "highlighted_projects": [
+    {
+      "description": "\n\n- Created an android application to send picture data from an android device to a windows application over a wireless network.\n- Programmed a Convolutional Neural Network (CNN) model to detect objects in pictures using Python and the Keras library with an accuracy of about 85 percent.\n- Implemented Java based solution to allow two-way communication between the Android application and the windows application.\n",
+      "git_url": null,
+      "name": "Deep Learning - Picture Analysis"
+    },
+    {
+      "description": "\n\n- Created very similar parallel versions of a genetic algorithm in Java and C++ using Java and POSIX threads to find the shortest path between a list of cities based on how far apart each city was from each other.\n- Analyzed the two implementations to compare performance of the algorithm implemented in different languages.\n",
+      "git_url": null,
+      "name": "Parallel Path finding algorithm"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a monitoring agent program using Bash scripts for Linux OS. This program collects hardware specification and resource usage data for the system and then stores it into a relational database. The database to store the information was created using PostgreSQL and deployed locally using a Docker image for Linux. \n\n- Host Info script: Collect hardware specifications and inserts them into the appropriate table\n- Usage Infor script: Collect server usage data and insert it into the appropriate table. This script is executed every minute using Linux crontab to allow us to get data at regular intervals on usage.\n",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: ",
+        "JDBC App: ",
+        "Grep App: "
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Faizan Ali",
+  "others": [
+    {
+      "bullets": [
+        "Cricket",
+        "Video Games"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "\n\n- Develop, test, and maintain scalable, high quality software based on requirements\n- Collaborate with other developers,and product owner using the Agile software development approach to create high quality applications\n",
+      "duration": "2022-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "The AI Hub - Durham College",
+      "description": "\n\n- Developed easy to maintain, AI and Computer Vision based software used to perform eye tracking with a webcam in collaboration with the front-end team.\n- Analyze and Annotate data required to develop Deep Learning based models for multiple projects.\n- Designed and developed a Deep Learning model to perform object detection on 25+ objects\n- Perform Accuracy tests on Deep Learning models to verify the model meets the standards\n- Collaborate with the front-end team to Deploy Deep Learning models to cloud.\n- Utilize strong communication skills to interact with the client and determine the requirements for the AI based software solution they require.\n",
+      "duration": "November 2020 - February 2022",
+      "title": "Reaserch Associate/developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Artificial Intelligence(Deep Learning)",
+      "Data Science",
+      "Docker",
+      "C++",
+      "Python",
+      "OpenCV/Numpy/Pandas",
+      "Tensorflow"
+    ],
+    "familiar": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Cloud Computing",
+      "Android Development"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/GitHub"
+    ]
+  },
+  "summary": "My passion for Computer Science started at a very early age where I would spend days trying to figure out how certain components/software on my computer work or as was often the case why they don't work. Though early on this was mainly focused on games that would refuse to work on my Computer or were just laggy(I had a very old computer with terrible specs).  My days fiddling around on my computer and admittedly, breaking 1 or 2 when I was a kid and decided to open it up myself to fix broken components such as USB ports(who knew you shouldn't open up computers on the carpet while wearing socks) pushed me to learn more about Computer Science and the software industry.\n\nTo pursue my passion and interest in Computer Science, I graduated with my Bachelors of Science(Honours) in Computer Science from the University of Ontario Institute of Technology(UOIT) in 2019, after which I got my Post Grad Certificate in AI Analysis, Design and Implementation at Durham College in 2021. My education helped develop my theoretical and practical skills in various aspects of computer science such as Software Development, Data Science, and Artificial Intelligence.\n\nAfter I got my bachelor's degree and was pursuing my Post Grad certificate I got the opportunity to work as a Research Associate/developer at the AI Hub.  In this role I got the chance to learn from and work alongside some of the top professionals in the industry using my skills in computer science/software development to research and develop easy to maintain, AI and Computer Vision-based software according to client requirements.\n\nMy education and experiences have led me to become someone very passionate about Computer Science and always on the lookout to enhance my skills by learning more about it.\n"
+}
