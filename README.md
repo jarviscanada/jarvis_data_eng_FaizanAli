@@ -46,14 +46,14 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_FaizanAli]
 
 
 ## Highlighted Projects
-**Deep Learning - Picture Analysis**: 
+**Deep Learning - Picture Analysis** [[GitHub](https://github.com/Faizan1394/Image-identifier)]: 
 
 - Created an android application to send picture data from an android device to a windows application over a wireless network.
 - Programmed a Convolutional Neural Network (CNN) model to detect objects in pictures using Python and the Keras library with an accuracy of about 85 percent.
 - Implemented Java based solution to allow two-way communication between the Android application and the windows application.
 
 
-**Parallel Path finding algorithm**: 
+**Parallel Path finding algorithm** [[GitHub](https://github.com/Faizan1394/Parallel-Genetic-Algorithm)]: Find the best path between 2 cities using the genetic algorithm.
 
 - Created very similar parallel versions of a genetic algorithm in Java and C++ using Java and POSIX threads to find the shortest path between a list of cities based on how far apart each city was from each other.
 - Analyzed the two implementations to compare performance of the algorithm implemented in different languages.

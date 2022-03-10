@@ -21,12 +21,12 @@
   "highlighted_projects": [
     {
       "description": "\n\n- Created an android application to send picture data from an android device to a windows application over a wireless network.\n- Programmed a Convolutional Neural Network (CNN) model to detect objects in pictures using Python and the Keras library with an accuracy of about 85 percent.\n- Implemented Java based solution to allow two-way communication between the Android application and the windows application.\n",
-      "git_url": null,
+      "git_url": "https://github.com/Faizan1394/Image-identifier",
       "name": "Deep Learning - Picture Analysis"
     },
     {
-      "description": "\n\n- Created very similar parallel versions of a genetic algorithm in Java and C++ using Java and POSIX threads to find the shortest path between a list of cities based on how far apart each city was from each other.\n- Analyzed the two implementations to compare performance of the algorithm implemented in different languages.\n",
-      "git_url": null,
+      "description": "Find the best path between 2 cities using the genetic algorithm.\n\n- Created very similar parallel versions of a genetic algorithm in Java and C++ using Java and POSIX threads to find the shortest path between a list of cities based on how far apart each city was from each other.\n- Analyzed the two implementations to compare performance of the algorithm implemented in different languages.\n",
+      "git_url": "https://github.com/Faizan1394/Parallel-Genetic-Algorithm",
       "name": "Parallel Path finding algorithm"
     }
   ],
