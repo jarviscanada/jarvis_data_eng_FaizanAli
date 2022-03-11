@@ -14,7 +14,7 @@ if [ $# -ne 5 ]; then
 fi
 
 mem_out=`cat /proc/meminfo`
-top_stat=`top -n 1`
+top_stat=`top -n 1 -b`
 disk_out=`df -BM --total`
 hostname=$(hostname -f)
 
