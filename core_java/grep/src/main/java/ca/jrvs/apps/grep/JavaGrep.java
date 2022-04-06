@@ -26,17 +26,17 @@ public interface JavaGrep {
   /**
    * Read a file and return all the lines
    *
-   * FileReader - lets you read contents of a file as a stream(sequence of data) of characters
+   * FileReader: lets you read contents of a file as a stream(sequence of data) of characters
    *
-   * BufferedReader - Allows you to read text using bufferring. It loads chunks of data into memory
-   * at a time so you don't have to read one character at a time character encoding - text is stored
-   * as bytes in a file, and it needs to be converted into meaningful text.
+   * BufferedReader: Allows you to read text using bufferring. It loads chunks of data into memory
+   *                 at a time so you don't have to read one character at a time character encoding - text is stored
+   *                 as bytes in a file, and it needs to be converted into meaningful text.
    *
-   * Character Encoding - used to map real life text to bytes that computer can understand
-   * Character Decoding - used to convert the bytes back to text
+   * Character Encoding: used to map real life text to bytes that computer can understand
+   * Character Decoding: used to convert the bytes back to text
    *
-   * Note: FileReader decodes the bytes in the file using the default
-   * encoding for the computer your program is running on.  if you want to use a specific decoding scheme use InputStreamReader
+   * Note: FileReader decodes the bytes in the file using the default encoding for the computer your program is running on.
+   *       if you want to use a specific decoding scheme use InputStreamReader
    *
    * @param inputFile file to be read
    * @return lines
