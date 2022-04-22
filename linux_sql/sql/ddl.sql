@@ -22,5 +22,6 @@ CREATE TABLE PUBLIC.host_usage
         cpu_kernel              INT NOT NULL,
         disk_io                 INT NOT NULL,
         disk_available          INT NOT NULL,
+        PRIMARY KEY (host_id, time_stamp),
         FOREIGN KEY(host_id) REFERENCES host_info(id)
     );
