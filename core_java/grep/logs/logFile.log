@@ -1,8 +1,24 @@
-199  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Starting JvaGrep
-200  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting regex pattern: .*Romeo.*Juliet.*
-201  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting root directory: ./grep/data
-201  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting output file: ./grep/src/main/resources/output.txt
-202  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Starting to process
-1228 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Attempting to write matched line to ./grep/src/main/resources/output.txt
-1229 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - File writing completed successfully
-1229 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Processing complete
+43795 [main] INFO  ca.jrvs.apps.grep.JavaGrepLambdaImp - Starting JvaGrepLambdaImp
+43798 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting regex pattern: .*Romeo.*Juliet.*
+43799 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting root directory: ./data
+43799 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting output file: ./src/main/resources/grep.txt
+43799 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Starting to process
+44907 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Attempting to write matched line to ./src/main/resources/grep.txt
+44908 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - File writing completed successfully
+44908 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Processing complete
+278  [main] INFO  ca.jrvs.apps.grep.JavaGrepLambdaImp - Starting JvaGrepLambdaImp
+280  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting regex pattern: .*Romeo.*Juliet.*
+281  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting root directory: ./data
+281  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting output file: ./src/main/resources/grep.txt
+281  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Starting to process
+1420 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Attempting to write matched line to ./src/main/resources/grep.txt
+1421 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - File writing completed successfully
+1421 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Processing complete
+210  [main] INFO  ca.jrvs.apps.grep.JavaGrepLambdaImp - Starting JvaGrepLambdaImp
+212  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting regex pattern: .*Romeo.*Juliet.*
+213  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting root directory: ./data
+213  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Setting output file: ./src/main/resources/grep.txt
+213  [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Starting to process
+1245 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Attempting to write matched line to ./src/main/resources/grep.txt
+1245 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - File writing completed successfully
+1245 [main] INFO  ca.jrvs.apps.grep.JavaGrepImp - Processing complete

@@ -7,15 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,13 +66,16 @@ public class JavaGrepImp implements JavaGrep {
 
     List<File> list = new ArrayList<File>();
 
-    try (Stream<Path> filepath = Files.walk(Paths.get(rootDir))) {
+    //get file object
+    File dr = new File(rootDir);
 
-      // convert each value from path to file and add it to the list of files
-      list = filepath.map(mapFile -> mapFile.toFile()).filter(file -> file.isFile())
-          .collect(Collectors.toList());
-    } catch (IOException e) {
-      logger.error("No such directory", e);
+    //list of all files and directories in root directory
+    File[] listFiles = dr.listFiles();
+
+    for(File f : listFiles){
+      if(f.isFile()){
+        list.add(f);
+      }
     }
 
     return list;
