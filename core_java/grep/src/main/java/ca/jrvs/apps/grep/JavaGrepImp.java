@@ -71,13 +71,16 @@ public class JavaGrepImp implements JavaGrep {
 
     List<File> list = new ArrayList<File>();
 
-    try (Stream<Path> filepath = Files.walk(Paths.get(rootDir))) {
+    //get file object
+    File dr = new File(rootDir);
 
-      // convert each value from path to file and add it to the list of files
-      list = filepath.map(mapFile -> mapFile.toFile()).filter(file -> file.isFile())
-          .collect(Collectors.toList());
-    } catch (IOException e) {
-      logger.error("No such directory", e);
+    //list of all files and directories in root directory
+    File[] listFiles = dr.listFiles();
+
+    for(File f : listFiles){
+      if(f.isFile()){
+        list.add(f);
+      }
     }
 
     return list;
