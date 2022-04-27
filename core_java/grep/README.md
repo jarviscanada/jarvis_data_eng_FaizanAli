@@ -56,7 +56,7 @@ They will result in only a small portion of data/file being loaded into memory a
 
 # Deployment
 - Created a docker image with openjdk:8-alpine image as the base image
-- the jar file for our app was added to the image
+- The uber jar file for our app was added to the image
 - The jar file was set as the ENTRYPOINT for the docker app
 - The final image was than deployed to docker under the name faizan1394/grep
 
