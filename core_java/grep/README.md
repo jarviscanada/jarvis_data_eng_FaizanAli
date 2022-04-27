@@ -1,6 +1,5 @@
 # Introduction
 This program allows you to have linux grep functionality in any OS. 
-
 It allows user to search for a regex pattern in all files in a given directory and its subdirectories, outputting all matching lines into a txt file.
 
 This app was implemented in 2 different ways:
