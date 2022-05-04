@@ -1,24 +1,31 @@
 # Introduction
-This program allows you to have linux grep functionality in any OS. 
-It allows user to search for a regex pattern in all files in a given directory and its subdirectories, outputting all matching lines into a txt file.
+This program allows you to have Linux grep functionality in any OS. 
+It allows the user to search for a regex pattern in all files in a given directory and its subdirectories, outputting all matching lines into a text file.
 
-This app was implemented in 2 different ways:
+For this app, a JavaGrep interface was created specifying the functionality the app must-have. JavaGrepImp class implments this interface and uses only features available in Java 7 and lower. JavaGrepLambdaImp class extends the JavaGrepImp class but overides some methods so they made use of Java 8 functionality - streams and Lambda for getting the list of files in directories and reading them.
 
-    - JavaGrepImp
-        - This version uses for loops and file library to get list of files and read them
-    - JavaGrepLambdaImp
-        - This version uses JAVA 8 functionality - streams and Lamabda for getting list of files in directroires and reading them
-
-The app was deployed to DockerHub so anyone can easily get it and use it.
+The app was created using Maven to allow easy project builds and a Standard Directory Layout. It was deployed to DockerHub for easy access.
 
 # Quick Start
-If you got source code from github and compiled it yourself:
+If you got source code from this git repository:
 
-    Lambda Version:
-       - USAGE: JavaGrepLambdaImp regex rootPath outFile
+    JavaGrepLambdaImp:
+    	Use Maven clean and package command to build Uber Jar file:
+    		mvn clean package
+       	
+    	You can now use the jar file to run the program:
+  			- USAGE: JavaGrepLambdaImp regex rootPath outFile
+  			- ex: java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepLambdaImp .*Romeo.*Juliet.* ./data ./src/main/resources/output.txt
+       
+       
 
-    non-lambda version:
-       - USAGE: JavaGrepImp regex rootPath outFile
+    JavaGrepImp:
+    	Use Maven clean and package command to build Uber Jar file:
+    		mvn clean package
+       	
+    	You can now use the jar file to run the program:
+  			- USAGE: JavaGrepImp regex rootPath outFile
+  			- ex: java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepLambdaImp .*Romeo.*Juliet.* ./data ./src/main/resources/output.txt
 
 Docker:
 
@@ -28,20 +35,46 @@ Docker:
         docker run --rm -v pwd /data:/data pwd /log:/log faizan1394/grep .*Romeo.*Juliet.* /data /log/grep.out
 
 #Implemenation
-## Pseudocode
-    fucntion process():
-        matchedLines = new ArrayList<String>()
-        
-        For each file in root directory:
-            For each line in file:
-                If line matches regex pattern:
-                    Add to matchedLines
-        
-        Write matched Lines to output file
-    
-    
+	
+	Class JavaGrepLambdaImp:
+		  /**
+		   * Traverse a given directory and return all files
+		   *
+		   * @param rootDir input directory
+		   * @return files under the rootDir
+		   */
+		  List<File> listFiles(String rootDir);
+		
+		
+		  /**
+		   * Read a file and return all the lines in it
+		   *
+		   * @param inputFile file to be read
+		   * @return lines
+		   * @throws IllegalArgumentException if a given inputFile is not a file
+		   */
+		  List<String> readLines(File inputFile);	
+		
 
-## Performance Issue
+		  /**
+		   * check if a line contains the regex pattern (passed by user)
+		   *
+		   * @param line input string
+		   * @return true if there is a match
+		   */
+		  boolean containsPattern(String line);
+		  
+		  
+		  /**
+		   * Write lines to a file
+		   *
+		   * @param lines matched line
+		   * @throws IOException if write failed
+		   */
+		  void writeToFile(List<String> lines) throws IOException;
+		    
+
+#Performance Issue
 Reading an entire file into memory can result in an out of memory error as there may not be enough memory allocated to your application to read in such a big file.
 
 Instead of reading the entire file at once we can use BufferReader or the Stream API to read the data from file in chunks. 

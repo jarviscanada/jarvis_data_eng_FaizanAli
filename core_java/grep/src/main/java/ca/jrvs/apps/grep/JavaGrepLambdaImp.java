@@ -35,9 +35,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     }
   }
 
-  /**
-   * Implemented using lmabda and stream API
-   */
   @Override
   public List<String> readLines(File inputFile) {
     List<String> linesList = new ArrayList<>();
@@ -52,9 +49,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
   }
 
 
-  /**
-   * Implemented using lmabda and stream API
-   */
   @Override
   public List<File> listFiles(String rootDir) {
     List<File> list = new ArrayList<File>();
