@@ -38,45 +38,19 @@
     },
     {
       "description": [
-        "Twitter App: ",
-        "JDBC App: ",
-        "Grep App: "
+        "JDBC App: Java application that creates a connection to a Postgresql database for employee information using JDBC.  It allows you to easily perform all CRUD operations on the database from the application.",
+        "Grep App: This program allows you to have linux grep functionality in any OS. It allows user to search for a regex pattern in all files in a given directory and its subdirectories, outputting all matching lines into a txt file."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
-      "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Faizan Ali",
   "others": [
     {
       "bullets": [
-        "Cricket",
-        "Video Games"
+        "Playing and watching Cricket",
+        "Playing PC Video Games"
       ],
       "title": "Activities/Hobbies"
     }
@@ -97,11 +71,11 @@
   ],
   "skills": {
     "competent": [
-      "Artificial Intelligence(Deep Learning)",
       "Data Science",
       "Docker",
       "C++",
       "Python",
+      "Artificial Intelligence(Deep Learning)",
       "OpenCV/Numpy/Pandas",
       "Tensorflow"
     ],
@@ -120,5 +94,5 @@
       "Git/GitHub"
     ]
   },
-  "summary": "My passion for Computer Science started at a very early age where I would spend days trying to figure out how certain components/software on my computer work or as was often the case why they don't work. Though early on this was mainly focused on games that would refuse to work on my Computer or were just laggy(I had a very old computer with terrible specs).  My days fiddling around on my computer and admittedly, breaking 1 or 2 when I was a kid and decided to open it up myself to fix broken components such as USB ports(who knew you shouldn't open up computers on the carpet while wearing socks) pushed me to learn more about Computer Science and the software industry.\n\nTo pursue my passion and interest in Computer Science, I graduated with my Bachelors of Science(Honours) in Computer Science from the University of Ontario Institute of Technology(UOIT) in 2019, after which I got my Post Grad Certificate in AI Analysis, Design and Implementation at Durham College in 2021. My education helped develop my theoretical and practical skills in various aspects of computer science such as Software Development, Data Science, and Artificial Intelligence.\n\nAfter I got my bachelor's degree and was pursuing my Post Grad certificate I got the opportunity to work as a Research Associate/developer at the AI Hub.  In this role I got the chance to learn from and work alongside some of the top professionals in the industry using my skills in computer science/software development to research and develop easy to maintain, AI and Computer Vision-based software according to client requirements.\n\nMy education and experiences have led me to become someone very passionate about Computer Science and always on the lookout to enhance my skills by learning more about it.\n"
+  "summary": "My passion for Computer Science started at a very early age when I would spend days figuring out how specific components/software on my computer work.  My early interest in the inner working of computers soon developed into a passion that pushed me to learn more about Computer Science.\n\nTo pursue my passion and interest in Computer Science, I graduated with a Bachelor of Science(Honours) in Computer Science from the University of Ontario Institute of Technology(UOIT) in 2019. I then got a Post Grad Certificate in AI Analysis, Design, and Implementation from Durham College in 2021.  My education helped develop my theoretical and practical skills in various aspects of computer science such as Software Development, Data Science, and Artificial Intelligence.\n\nWhile pursuing my Post Grad certificate, I got the opportunity to work as a Research Associate/developer at the AI Hub.  At this job I got the chance to learn from and work alongside some of the top professionals in the industry using my skills in computer science/software development to research and develop easy to maintain, AI and Computer Vision-based software according to client requirements.\n\nMy education and experiences have led me to become someone very passionate about Computer Science and always on the lookout to enhance my skills by learning more about it.\n"
 }
