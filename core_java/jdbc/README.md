@@ -3,7 +3,7 @@ This application makes a connection to a PostgreSQL database using Java Database
 This database contains information on Customer, Prodcuts, and Salespoerson.
 Using this application you can perform all CRUD opperations on this database to easily modify the data.
 
-#ER Diagram
+# ER Diagram
 
 
 ![img.png](img.png)
