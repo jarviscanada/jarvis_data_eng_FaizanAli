@@ -5,7 +5,7 @@ Using this application you can perform all CRUD opperations on this database to 
 
 # ER Diagram
 
-![img_1.png](/home/faizan/Desktop/jarvis_data_eng_FaizanAli/core_java/jdbc/src/main/resources/ER.png)
+![img_1.png](./src/main/resources/ER.png)
 
 # Design Patterns
 Data Access Object(DAO) pattern was used to separate the data access code from the business logic.
