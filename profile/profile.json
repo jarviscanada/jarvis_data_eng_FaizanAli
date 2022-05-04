@@ -38,7 +38,7 @@
     },
     {
       "description": [
-        "JDBC App: Java application that creates a connection to a Postgresql database for employee information using JDBC.  It allows you to easily perform all CRUD operations on the database from the application.",
+        "JDBC App: Java application that creates a connection to a Postgresql database for customer and product information using JDBC.  It allows you to easily perform all CRUD operations on the database from the application.",
         "Grep App: This program allows you to have linux grep functionality in any OS. It allows user to search for a regex pattern in all files in a given directory and its subdirectories, outputting all matching lines into a txt file."
       ],
       "git_url": "/core_java",
