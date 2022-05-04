@@ -4,6 +4,8 @@ This database contains information on Customer, Prodcuts, and Salespoerson.
 Using this application you can perform all CRUD opperations on this database to easily modify the data.
 
 #ER Diagram
+
+
 ![img.png](img.png)
 
 # Design Patterns
