@@ -65,12 +65,12 @@ The database to store the information was created using PostgreSQL linux docker 
 ## Database Modeling
 `host_info`
 
-![img.png](./host_info_table.png)
+![img.png](./host_info.png)
 
 
 `host_usage`
 
-![img.png](./host_usage_table.png)
+![img.png](./host_usage.png)
 
 # Deployment
 - The database ran on a docker container (localy)
