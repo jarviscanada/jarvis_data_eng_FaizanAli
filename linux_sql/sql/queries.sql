@@ -26,7 +26,7 @@ Average used memory in percentage over 5 mins interval for each host. (used memo
 	1,node1.jrvs.ca,2019-01-01 00:10:00,65
 	2,node1.jrvs.ca,2019-01-01 00:00:00,50
 	2,node1.jrvs.ca,2019-01-01 00:05:00,40
-	2,node1.jrvs.ca,2019-01-01 00:10:00,30 
+	2,node1.jrvs.ca,2019-01-01 00:10:00,30
 
 */
 
@@ -37,7 +37,7 @@ begin
 END;
 $$
     LANGUAGE PLPGSQL;
-    
+
 
 SELECT host_id,host_info.hostname,round5(host_usage.time_stamp) AS timestamp,AVG(ROUND(((host_info.total_mem - host_usage.memory_free)*1.0/host_info.total_mem)*100,0)) AS avg_mem_used
 FROM  host_usage
