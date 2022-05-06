@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#Setup arguments
-psql_host=$1
-psql_port=$2
-db_name=$3
-psql_user=$4
-psql_password=$5
 
 #check # of args
 if [ $# -ne 5 ]; then
@@ -13,18 +7,25 @@ if [ $# -ne 5 ]; then
   exit 1
 fi
 
+#Setup arguments
+psql_host=$1
+psql_port=$2
+db_name=$3
+psql_user=$4
+psql_password=$5
+
 #contains info on cpu
 lscpu_out=`lscpu`
 #contains info on memory
 mem_out=`cat /proc/meminfo`
 
-hostname=$(hostname -f)
-cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
-cpu_architecture=$(echo "$lscpu_out"  | egrep "^A.*:" | awk '{print $2}' | xargs)
-cpu_model=$(echo "$lscpu_out"  | egrep "^M.*e" | awk '{print $3 " " $4 " " $5 " " $6 " " $7}' | xargs)
-cpu_mhz=$(echo "$lscpu_out"  | egrep "^C.*z" | awk '{print $3}' | xargs)
-l2_cache=$(echo "$lscpu_out"  | egrep "^L2.*e" | awk '{print $3}' | sed 's/K//' |  xargs)
-total_mem=$(echo "$mem_out"  | egrep "^M.*l:" | awk '{print $2}' | xargs)
+hostname=$(hostname)
+cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}')
+cpu_architecture=$(echo "$lscpu_out"  | egrep "^A.*e:" | awk '{print $2}')
+cpu_model=$(echo "$lscpu_out"  | egrep "^M.*e:" | awk '{print $3 " " $4 " " $5 " " $6 " " $7 " " $8}')
+cpu_mhz=$(echo "$lscpu_out"  | egrep "^CPU MHz" | awk '{print $3}')
+l2_cache=$(echo "$lscpu_out"  | egrep "^L2.*e" | awk '{print $3}')
+total_mem=$(echo "$mem_out"  | egrep "^M.*l:" | awk '{print $2}')
 time_stamp=$(date +"%D %T")
 
 #insert

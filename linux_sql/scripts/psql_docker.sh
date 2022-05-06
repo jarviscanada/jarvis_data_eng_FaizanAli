@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+#atleast 1 argument required for cmd
+if [ $# -lt 1 ]; then
+  echo '1 of the following arguments required: create,start,stop'
+  exit 1
+fi
+
 #Setup arguments
 cmd=$1
 db_username=$2
@@ -13,7 +20,7 @@ image_name="postgres"
 image_tag="9.6.23-alpine"
 
 #if docker is not running run the docker start command
-sudo systemctl status docker || sudo systemctl start docker &> /dev/null
+sudo systemctl status docker &> /dev/null || sudo systemctl start docker &> /dev/null
 
  #get status of container jrvs-psql
 docker container inspect $container_name &> /dev/null
@@ -60,4 +67,5 @@ case $cmd in
     exit $?
 
     ;;
+
 esac
