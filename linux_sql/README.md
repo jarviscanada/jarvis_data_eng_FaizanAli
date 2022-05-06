@@ -63,9 +63,13 @@ The database to store the information was created using PostgreSQL linux docker 
 - queries.sql: Used to get hardware specification and resource usage information stored in the database. This is used to understand how much resources are being used on average and make appropriate changes as required.
 
 ## Database Modeling
-- `host_info`
+`host_info`
+
 ![img.png](./host_info_table.png)
-- `host_usage`
+
+
+`host_usage`
+
 ![img.png](./host_usage_table.png)
 
 # Deployment
