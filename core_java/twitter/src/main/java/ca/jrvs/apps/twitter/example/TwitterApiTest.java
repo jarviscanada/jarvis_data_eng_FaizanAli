@@ -2,7 +2,6 @@ package ca.jrvs.apps.twitter;
 
 import com.google.gdata.util.common.base.PercentEscaper;
 import java.util.Arrays;
-import javax.swing.text.html.parser.Entity;
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 import org.apache.http.HttpResponse;
@@ -35,7 +34,7 @@ public class TwitterApiTest {
     Arrays.stream(request.getAllHeaders()).forEach(System.out::println);
 
     //send the request
-    HttpClient   httpClient = HttpClientBuilder.create().build();
+    HttpClient httpClient = HttpClientBuilder.create().build();
     HttpResponse response = httpClient.execute(request);
     System.out.println(EntityUtils.toString(response.getEntity()));
   }
