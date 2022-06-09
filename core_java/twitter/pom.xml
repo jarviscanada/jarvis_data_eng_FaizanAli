@@ -36,6 +36,13 @@
       <artifactId>jackson-databind</artifactId>
     </dependency>
 
+    <!--Logback-->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+
     <!--testing-->
     <dependency>
       <groupId>org.mockito</groupId>
